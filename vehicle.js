@@ -9,6 +9,7 @@ class Vehicle {
         this.mileage = mileage;
         this.started = false;
         this.numberOfWheels = 0;
+        this.fuel = 100             ///added to provide if/then statements
     }
 
     start() {
@@ -52,6 +53,7 @@ class Vehicle {
         }
     }
     stop() {
+        console.log('engine is off')
         this.started = false;
     }
 
